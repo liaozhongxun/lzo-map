@@ -14,7 +14,6 @@ let mapRef = ref(null);
 watch(
   props,
   (n, o) => {
-    console.log(n, o, 444);
     var point = new BMap.Point(n.mapLng, n.mapLat);
     mapRef.value.panTo(point);
     mapRef.value.setZoom(13);
